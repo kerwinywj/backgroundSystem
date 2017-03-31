@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>后台管理系统</title>
+    <link rel="stylesheet" href="css/style.css"/>
+</head>
+<body>
+    <div class="head clearfix">
+        <h2>系统管理</h2>
+        <ul class="list clearfix" id="listnav">
+            <li class="item current">
+                <a class="title tit1" href="#">菜单管理</a>
+            </li>
+            <li class="item">
+                <a class="title tit2" href="#">模块管理</a>
+            </li>
+            <li class="item">
+                <a class="title tit3" href="#">系统设置</a>
+            </li>
+            <li class="item">
+                <a class="title tit4" href="#">扩展管理</a>
+            </li>
+        </ul>
+        <ul class="link clearfix">
+            <li class="item item_0">
+                <a href="#">你好,admin</a>
+            </li>
+            <li class="item item_1">
+                <a href="#">隐藏菜单</a>
+            </li>
+            <li class="item item_2">
+                <a href="#">首页</a>
+            </li>
+            <li class="item item_3">
+                <a href="#">帮助</a>
+            </li>
+            <li class="item item_4">
+                <a href="#">退出</a>
+            </li>
+        </ul>
+    </div>
+
+<div class="leftmenu" id="leftmenu">
+    <div class="leftmenu_0 leftmenu-item">
+        <dl>
+            <dt>栏目管理</dt>
+            <dd>
+                <ul class="clearfix">
+                    <li><a href="javascript:;" _link="lanmuguanli.html">栏目管理</a></li>
+                </ul>
+            </dd>
+        </dl>
+        <dl>
+            <dt>内容管理</dt>
+            <dd>
+                <ul class="clearfix">
+                    <li><a href="javascript:;" _link="gongsijieshao.html">公司介绍</a></li>
+                    <li><a href="javascript:;">新闻中心</a></li>
+                    <li><a href="javascript:;">产品展示</a></li>
+                    <li><a href="javascript:;">公司相册</a></li>
+                    <li><a href="javascript:;">联系我们</a></li>
+                </ul>
+            </dd>
+        </dl>
+        <dl>
+            <dt>快捷面板</dt>
+            <dd>
+                <ul class="clearfix">
+                    <li><a href="javascript:;">广告管理</a></li>
+                    <li><a href="javascript:;">公告管理</a></li>
+                    <li><a href="javascript:;">友情链接</a></li>
+                    <li><a href="javascript:;">留言本管理</a></li>
+                    <li><a href="javascript:;">评论管理</a></li>
+                    <li><a href="javascript:;">清除系统缓存</a></li>
+                </ul>
+            </dd>
+        </dl>
+    </div>
+    <div class="leftmenu_1 leftmenu-item" style="display:none;">
+        <dl>
+            <dt>内置模块</dt>
+            <dd>
+                <ul class="clearfix">
+                    <li><a href="javascript:;">自由模块管理</a></li>
+                    <li><a href="javascript:;">广告管理</a></li>
+                    <li><a href="javascript:;">专题管理</a></li>
+                    <li><a href="javascript:;">公告管理</a></li>
+                    <li><a href="javascript:;">友情链接</a></li>
+                    <li><a href="javascript:;">留言本管理</a></li>
+                    <li><a href="javascript:;">评论管理</a></li>
+                </ul>
+            </dd>
+        </dl>
+        <dl>
+            <dt>其他模块</dt>
+            <dd>
+            </dd>
+        </dl>
+    </div>
+    <div class="leftmenu_2 leftmenu-item" style="display:none;">
+        <dl>
+            <dt>系统设置</dt>
+            <dd>
+                <ul class="clearfix">
+                    <li><a href="javascript:;" _link="wangzhanshezhi.html">网站设置</a></li>
+                    <li><a href="javascript:;">伪静态|缓存设置</a></li>
+                    <li><a href="javascript:;">在线客服设置</a></li>
+                    <li><a href="javascript:;">清理系统缓存</a></li>
+                </ul>
+            </dd>
+        </dl>
+        <dl>
+            <dt>静态缓存</dt>
+            <dd>
+                <ul class="clearfix">
+                    <li><a href="javascript:;">一站更新全站</a></li>
+                    <li><a href="javascript:;">更新首页</a></li>
+                    <li><a href="javascript:;">更新栏目</a></li>
+                    <li><a href="javascript:;">更新文档</a></li>
+                    <li><a href="javascript:;">更新专题</a></li>
+                </ul>
+            </dd>
+        </dl>
+        <dl>
+            <dt>会员管理</dt>
+            <dd>
+                <ul class="clearfix">
+                    <li><a href="javascript:;">会员管理</a></li>
+                    <li><a href="javascript:;">会员组管理</a></li>
+                </ul>
+            </dd>
+        </dl>
+        <dl>
+            <dt>管理员管理</dt>
+            <dd>
+                <ul class="clearfix">
+                    <li><a href="javascript:;">系统用户管理</a></li>
+                    <li><a href="javascript:;">用户组管理</a></li>
+                    <li><a href="javascript:;">节点列表</a></li>
+                </ul>
+            </dd>
+        </dl>
+    </div>
+    <div class="leftmenu_3 leftmenu-item" style="display:none;">
+        <dl>
+            <dt>扩展管理</dt>
+            <dd>
+                <ul class="clearfix">
+                    <li><a href="javascript:;">模型管理</a></li>
+                    <li><a href="javascript:;">菜单管理</a></li>
+                    <li><a href="javascript:;">数据库管理</a></li>
+                    <li><a href="javascript:;">联动管理</a></li>
+                    <li><a href="javascript:;">区域管理</a></li>
+                    <li><a href="javascript:;">数据元管理</a></li>
+                    <li><a href="javascript:;">已传文件管理</a></li>
+                </ul>
+            </dd>
+        </dl>
+        <dl>
+            <dt>我的账户</dt>
+            <dd>
+                <ul class="clearfix">
+                    <li><a href="javascript:;">修改我的信息</a></li>
+                    <li><a href="javascript:;">修改密码</a></li>
+                </ul>
+            </dd>
+        </dl>
+    </div>
+</div>
+    <div class="rightmain">
+        <div class="rightcontent">
+            <iframe id="main" name="name" scrolling="yes" src="wangzhanshezhi.html" frameborder="0"></iframe>
+            <!--<!--<iframe id="main" name="name" scrolling="yes" src="lanmuguanli.html" frameborder="0"></iframe>-->-->
+            <!--<iframe id="main" name="name" scrolling="yes" src="gongsijieshao.html" frameborder="0"></iframe>-->
+
+        </div>
+    </div>
+
+    <!--JavaScript代码-->
+    <script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
+    <script type="text/javascript">
+        $(function(){
+            $('#listnav li').click(function(){
+                var _id = $(this).index();
+               $(this).addClass('current').siblings().removeClass('current');
+               $('.leftmenu .leftmenu-item').eq(_id).css('display','block').siblings('.leftmenu-item').hide();
+            });
+            $('#leftmenu dl dt').click(function(){
+                if ($(this).siblings('dd').is(':visible')) {
+                        $(this).css('background-position','right -40px');
+                }
+                else {
+                    $(this).css('background-position','right 10px');
+                }
+               $(this).siblings('dd').slideToggle('fast');
+            });
+
+            $('.link .item_1').click(function(){
+               if ($('.leftmenu').is(':visible')) {
+                    $('.leftmenu').css('display','none');
+                    $(this).children('a').text('显示菜单');
+                    $('body').addClass('hideleftmenu').removeClass('showleftmenu');
+               }
+               else {
+                   $('.leftmenu').css('display','block');
+                   $(this).children('a').text('隐藏菜单');
+                   $('body').addClass('showleftmenu').removeClass('hideleftmenu');
+               }
+            });
+
+            /* 左侧菜单切换*/
+            $('#leftmenu dl dd ul li a').click(function(){
+                var _link = $(this).attr('_link');
+//                alert(_link);
+                $('#main ').attr('src', _link);
+
+                $(this).addClass('currentLeftmenu').parent().siblings().children().removeClass('currentLeftmenu');
+                $(this).parents('dl').siblings().find('dd ul li a').removeClass('currentLeftmenu');
+            });
+        });
+    </script>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

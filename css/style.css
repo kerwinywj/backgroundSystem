@@ -1,0 +1,625 @@
+@charset "utf-8";
+
+/*css 初始化 */
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,
+address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,
+center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,
+aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video {
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+    margin: 0;
+    padding: 0;
+}
+
+fieldset, img, input, button { 			/*fieldset组合表单中的相关元素*/
+    outline-style: none;               /*清除input,button的外边线*/
+}
+
+ul, ol, dl, li {
+    list-style: none;				/*清除列表风格*/
+}
+
+/*防止多行文本框拖动*/
+textarea {
+    resize: none;
+}
+
+/*  去掉图片底测默认的3像素空白缝隙*/
+img {
+    border: 0;
+    vertical-align: middle;
+}
+
+table {
+    border-collapse: collapse;			/*合并外边线*/
+}
+
+
+/**公共样式开始**/
+body,th,td,button,input,select,textarea {
+    font: 12px/1.62 "Microsoft Yahei","Hiragino Sans GB","Helvetica Neue",
+    Helvetica,tahoma,arial,Verdana,sans-serif;
+    color: #333;
+}
+
+.clearfix:before, .clearfix:after {
+    content: "";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    *zoom: 1; /*IE/7/6*/
+}
+
+a {
+    text-decoration: none;
+}
+
+h1 {font-size:36px;}
+h2 {font-size:30px;}
+h3 {font-size:24px;}
+h4 {font-size:18px;}
+h5 {font-size:14px;}
+h6 {font-size:12px;}
+
+h1, h2, h3, h4, h5, h6 {
+    text-decoration: none;
+}
+/*功能被淘汰的小标签，主要使用在小效果图*/
+s, i, em {
+    font-style: normal;
+    text-decoration: none;
+}
+
+/*公共类*/
+.w {
+    /*版心 提取 */
+    width: 1210px;
+    margin: 0 auto;
+}
+
+.fl {
+    float: left
+}
+
+.fr {
+    float: right
+}
+
+.al {
+    text-align: left
+}
+
+.ac {
+    text-align: center
+}
+
+.ar {
+    text-align: right
+}
+
+.hide {
+    display: none
+}
+.bold {
+    font-weight: 700;
+}
+
+
+/* 登录界面 */
+.login {
+    width: 500px;
+    height: 340px;
+    background: #0076CB;
+    position: absolute;     /* 基于body,绝对定位实现居中 */
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+}
+.loginMain {
+    padding: 20px;
+    color: #fff;
+}
+.loginMain .list .item {
+    margin-left: 45px;
+    margin-top: 10px;
+    width: 355px;
+    height: 40px;
+}
+.loginMain .list .item span {
+    font-size: 14px;
+}
+.loginMain .list .item input[type="text"],.loginMain .list .item input[type="password"] {
+    width: 250px;
+    height: 30px;
+    padding: 0 5px;
+}
+.loginMain .list .item .verifyImg {
+    margin-left: 87px;
+    width: 264px;
+    background: #1697D7;
+}
+.loginMain .list .item input[type="button"] {
+    width: 80px;
+    height: 35px;
+    margin-left: 87px;
+    color: #fff;
+    background: #00487C;
+    font-size: 14px;
+    cursor: pointer;
+}
+.loginMain .list .item input[type="button"]:hover {
+    background: #015997;
+}
+.loginMain .tips {
+    display: inline-block;
+    width: 172px;
+    height: 35px;
+    line-height: 35px;
+    vertical-align: top;
+    font-size: 15px;
+    padding-left: 10px;
+}
+/* 登录界面结束 */
+
+/* 顶部导航 */
+.head {
+    width: 100%;
+    height: 63px;
+    background: #0F92D6;
+}
+.head h2 {
+    float: left;
+    width: 185px;
+    height: 63px;
+    line-height: 63px;
+    color: #fff;
+    text-align: center;
+}
+.head .list {
+    float: left;
+}
+.head .list .item {
+    float: left;
+    margin-right: 5px;
+    background: #22B7EB;
+}
+.head .list .item .title {
+    display: block;
+    width: 70px;
+    padding: 35px 0 5px 0;
+    text-align: center;
+    background: #22b7eb url(../img/ico_bg.png) no-repeat;
+    color: #fff;
+}
+.head .list .item .tit1 {
+    background-position: center -95px;
+}
+.head .list .item .tit2 {
+    background-position: center -195px;
+}
+.head .list .item .tit3 {
+    background-position: center -295px;
+}
+.head .list .item .tit4 {
+    background-position: center -395px;
+}
+.head .list .item.current a {
+    width: 120px;
+    background-color: #62D2F9;
+}
+.head .list .item .title:hover {
+    background-color: #62D2F9;
+}
+.head .link {
+    float: right;
+    margin: 30px 10px 0 0;
+}
+.head .link .item {
+    float: left;
+    margin-left: 15px;
+}
+.head .link .item a {
+    display: block;
+    padding-left: 25px;
+    background: url(../img/main_link_ico.png) no-repeat;
+    color: #fff;
+}
+.head .link li.item_0 a {
+    background-position: 0 0;
+}
+.head .link li.item_1 a {
+    background-position: 0 -150px;
+}
+.head .link li.item_2 a {
+    background-position: 0 -50px;
+}
+.head .link li.item_3 a {
+    background-position: 0 -190px;
+}
+.head .link li.item_4 a {
+    background-position: 0 -100px;
+}
+/* 顶部导航结束 */
+
+/* 左侧导航 */
+.leftmenu {
+    width: 187px;
+    position: absolute;
+    left: 0;
+    top: 70px;
+    bottom: 0;
+    z-index: 99;
+    background: url(../img/left_bg.png) repeat-y;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+.leftmenu dl dt {
+    width: 187px;
+    height: 26px;
+    line-height: 26px;
+    text-indent: 20px;
+    background: #009BEB url(../img/ico_small.png) no-repeat right 10px;
+    font-weight: blod;
+    font-size: 14px;
+    color: #fff;
+    cursor: pointer;
+}
+.leftmenu dl dd ul {
+    padding: 5px 0;
+}
+.leftmenu dl dd ul li {
+    width: 170px;
+    height: 26px;
+    float: right;
+    line-height: 26px;
+    text-indent: 10px;
+}
+.leftmenu dl dd ul li a {
+    display: block;
+    width: 169px;
+    height: 24px;
+    line-height: 24px;
+    color: #333;
+    background: #EDFBFF;
+}
+.leftmenu dl dd ul li a:hover {
+    border-bottom: 1px solid #B8C8D2;
+    border-top: 1px solid #B8C8D2;
+    border-left: 1px solid #B8C8D2;
+    color: #009beb;
+}
+.leftmenu dl dd ul li a.currentLeftmenu {
+    background: #fff url(../img/ico_small.png) right -90px no-repeat;
+    font-weight: bold;
+    color: #009beb;
+}
+/* 左侧导航结束 */
+
+/* 右侧主体框架 */
+
+/* 公共样式 */
+.text-left {
+    text-align: left;
+}
+.text-center {
+    text-align: center;
+}
+.text-right {
+    text-align: right;
+}
+.btn {
+    padding: 3px 15px;
+    border: 0;
+    color: #fff;
+    cursor: pointer;
+}
+.btn-blue {
+    background: #0D9AE4;
+}
+.btn-blue:hover {
+    background: #0084C9;
+}
+/* 公共样式结束 */
+.rightmain {
+    position: absolute;
+    top: 63px;
+    left: 187px;
+    bottom: 0;
+    right: 0;
+    overflow: hidden;
+}
+.rightcontent {
+    width: 100%;
+    height: 100%;
+    padding: 7px 0 0 7px;
+}
+.rightcontent iframe {
+    width: 100%;
+    height: 100%;
+}
+body.showleftmenu .rightmain {
+    left: 187px;
+}
+body.hideleftmenu .rightmain {
+    left: 0;
+}
+.maincol {
+    float: left;
+    margin-right: 0.5%;
+    width: 49%;
+}
+.maincol-left dl {
+    margin-bottom: 10px;
+    background: #3C99F5;
+}
+.maincol dl dt {
+    font-size: 16px;
+    color: #fff;
+    margin-bottom: 10px;
+    text-indent: 10px;
+}
+.maincol dl dd li {
+    color: #fff;
+    margin-bottom: 4px;
+    text-indent: 10px;
+}
+.maincol-right dl {
+    margin-bottom: 10px;
+    background: #06A520;
+}
+
+/* 栏目管理 */
+.pos {
+    height: 35px;
+    line-height: 35px;
+    font-size: 14px;
+    font-weight: bold;
+    padding-left: 20px;
+    background: url(../img/icon_home.png) left center no-repeat;
+    color: #0084D3;
+    border-bottom: 1px solid #ccc;
+}
+.operate, .tablewrap {
+    margin: 10px;
+}
+.table th {
+    height: 35px;
+    line-height: 35px;
+    font-size: 14px;
+    font-weight: bold;
+    background: #EEEEEE;
+}
+.table td {
+    height: 35px;
+    line-height: 35px;
+}
+.table {
+    border-top: 1px solid #ccc;
+    border-left: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+}
+.table tr {
+    border-bottom: 1px solid #ccc;
+}
+.table tr:hover {
+    background: #eee;
+}
+.page {
+    height: 35px;
+    line-height: 35px;
+    border-bottom: 1px solid #ccc;
+    border-left: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+}
+/* 公司介绍 */
+.gsjs_title {
+    width: 10%;
+    font-size: 14px;
+}
+.textarea-default {
+    width: 600px;
+    height: 90px;
+}
+.gsjs_editor {
+    width: 600px;
+    height: 300px;
+}
+.gsjs_btntit {
+    text-indent: -9999px;
+}
+.gsjs_form {
+    margin: 10px;
+}
+.gsjs_form dl {
+    margin: 20px 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
